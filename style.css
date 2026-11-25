@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+section {
+    min-height: 400px;
+    padding: 60px;
+    text-align: center;
+}
+
+#home {
+    background-color: lightblue;
+}
+
+#about {
+    background-color: white;
+}
+
+#courses {
+    background-color: lightgray;
+}
+
+#contact {
+    background-color: lightblue;
+}
+
+h1 {
+    font-size: 40px;
+    color: darkblue;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.course-card {
+    background-color: #ffffff;
+    color: #222222;
+    width: 220px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+.course-card h2 {
+    color: darkblue;
+}
+
+.course-card p {
+    color: #333333;
+    line-height: 1.5;
+}
+
+.course-card li {
+    color: #333333;
+}
+
+.course-card button {
+    background-color: darkblue;
+    color: white;
+    margin-top: 10px;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}form {
+    width: 400px;
+    max-width: 90%;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+}
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav h2 {
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    section h1 {
+        font-size: 30px;
+    }
+
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+.hero-content {
+    max-width: 700px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+#home h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+#home button {
+    margin-top: 20px;
+    padding: 15px 35px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#home button:hover {
+    transform: scale(1.05);
+}
+.course-card {
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    margin: 8px;
+}
+.hero-content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+.course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.course-details {
+    max-width: 800px;
+    margin: auto;
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.course-details ul {
+    display: inline-block;
+    text-align: left;
+    line-height: 2;
+}
+
+.course-details button {
+    margin-top: 20px;
+}
+.enroll-section {
+    max-width: 600px;
+    margin: auto;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.enroll-section form {
+    margin-top: 30px;
+}
+
+.enroll-section select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.enroll-section textarea {
+    margin-top: 10px;
+}
+/* ===== COURSE CARD WHITE DESIGN ===== */
+
+.course-card {
+    background-color: #ffffff;
+    color: #222222;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Course card heading */
+.course-card h2 {
+    color: darkblue;
+}
+
+/* Course card paragraph */
+.course-card p {
+    color: #333333;
+}
+
+/* Course card list/text */
+.course-card li {
+    color: #333333;
+}
+
+/* Course card button */
+.course-card button {
+    background-color: darkblue;
+    color: white;
+}

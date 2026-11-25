@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>KINGDOME ACADEMY</h2>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="index.html#courses">Courses</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="enroll-section">
+
+        <h1>Enroll Now</h1>
+
+        <p>Fill in your details to register for the course.</p>
+
+        <form id="enrollForm" onsubmit="enrollStudent(event)">
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <input
+                type="email"
+                id="studentEmail"
+                placeholder="Enter your email"
+                required
+            >
+
+            <input
+                type="tel"
+                id="studentPhone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+            </select>
+
+            <textarea
+                id="studentMessage"
+                placeholder="Enter your message"
+            ></textarea>
+
+            <button type="submit">Register Now</button>
+
+        </form>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<head>
+    <title>KINGDOME ACADEMY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2>KINGDOME ACADEMY</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home">
+
+    <div class="hero-content">
+
+        <h1>Build Your Future With Us</h1>
+
+        <p>
+            Learn new skills, build real projects,
+            and grow your career.
+        </p>
+
+        <button onclick="showMessage()">Get Started</button>
+
+    </div>
+
+     <div class="hero-image">
+            <img src="images/hero.jpg" alt="Learning">
+        </div>
+
+    </div>
+
+</section>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Us</h1>
+        <p>
+            We provide quality training and help students
+            develop their technical skills.
+        </p>
+    </section>
+
+
+    <!-- Courses Section -->
+    <section id="courses">
+
+    <h1>Our Courses</h1>
+
+    <div class="course-container">
+
+        <div class="course-card">
+            <img src="images/web.jpg" alt="Web Development">
+            <h2>Web Development</h2>
+            <p>Learn HTML, CSS, JavaScript and build modern websites.</p>
+            <a href="web-development.html">
+            <button>Learn More</button>
+            </a>
+        </div>
+
+        <div class="course-card">
+            <img src="images/python.jpg" alt="Python">
+            <h2>Python</h2>
+            <p>Learn Python programming and develop real-world applications.</p>
+            <a href="python.html">
+            <button>Learn More</button>
+            </a>
+        </div>
+
+        <div class="course-card">
+            <img src="images/java.jpg" alt="Java">
+            <h2>Java</h2>
+            <p>Learn Java programming and application development.</p>
+            <a href="java.html">
+            <button>Learn More</button>
+            </a>
+        </div>
+
+        <div class="course-card">
+            <img src="images/uiux.jpg" alt="UI UX Design">
+            <h2>UI/UX Design</h2>
+            <p>Learn Figma and create attractive user interfaces.</p>
+            <a href="uiux.html">
+            <button>Learn More</button>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Enrollment Section -->
+<section id="enroll">
+
+    <h1>Enroll Now</h1>
+
+    <p>Join our courses and start building your career.</p>
+
+    <div class="enroll-section">
+
+        <form onsubmit="enrollStudent(event)">
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <input
+                type="email"
+                id="studentEmail"
+                placeholder="Enter your email"
+                required
+            >
+
+            <input
+                type="tel"
+                id="studentPhone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+            <select id="course" required>
+
+                <option value="">Select a Course</option>
+
+                <option value="Web Development">
+                    Web Development
+                </option>
+
+                <option value="Python">
+                    Python
+                </option>
+
+                <option value="Java">
+                    Java
+                </option>
+
+                <option value="UI/UX Design">
+                    UI/UX Design
+                </option>
+
+            </select>
+
+            <button type="submit">
+                Enroll Now
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h1>Contact Us</h1>
+
+    <form onsubmit="submitForm(event)">
+
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+
+        <textarea id="message" placeholder="Enter your message"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<footer>
+
+    <h3>KINGDOME ACADEMY</h3>
+
+    <p>Learn. Build. Grow.</p>
+
+    <p>© 2026 My Website. All Rights Reserved.</p>
+
+</footer>
